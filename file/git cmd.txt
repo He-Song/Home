@@ -1,0 +1,16 @@
+//提交代码步骤
+
+git stash   //备份
+git pull //down代码
+git stash pop //还原代码
+
+git checkout -b abc  //git创建分支abc
+	git checkout master  //切换到master分支
+git status   //查看分支中的代码目录
+git add TowerLampDll.dll  //添加待提交代码TowerLampDll.dll到git
+git status //查看提交的代码；（绿色表示准备提交的，红色表示可选择提交的）
+git commit	//进入vi编辑器编辑注释， 编辑好后用:wq命令提交
+git push -u origin abc
+在浏览器中进入git lab 提交merge请求
+
+git config commit.template uxsino.template	//运行模板
